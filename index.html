@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planta do Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Faça a Planta Crescer!</h1>
+        
+        <!-- Área da Pergunta -->
+        <div id="quiz-box">
+            <p id="pergunta">Quanto é 5 + 3?</p>
+            <button onclick="verificarResposta(true)">8</button>
+            <button onclick="verificarResposta(false)">10</button>
+        </div>
+
+        <!-- Área da Planta -->
+        <div class="jardim">
+            <div class="vaso">
+                <!-- O caule vai mudar de tamanho -->
+                <div id="caule" class="estagio-0">
+                    <!-- Folhas ou flores que ficam no topo do caule -->
+                    <div class="folhas">🌱</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
